@@ -1,18 +1,60 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className='flex gap-5'>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
+    <nav className="w-full border-b bg-white">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <h1 className="text-2xl font-bold text-gray-900">
+          Logo
+        </h1>
+
+        {/* Navigation */}
+        <div className="flex items-center gap-6">
+          <a
+            href="#"
+            className="font-medium text-gray-700 transition hover:text-black"
+          >
+            Home
+          </a>
+
+          <a
+            href="#"
+            className="font-medium text-gray-700 transition hover:text-black"
+          >
+            About
+          </a>
+
+          <a
+            href="#"
+            className="font-medium text-gray-700 transition hover:text-black"
+          >
+            Services
+          </a>
+
+          <a
+            href="#"
+            className="font-medium text-gray-700 transition hover:text-black"
+          >
+            Projects
+          </a>
+
+          <a
+            href="#"
+            className="font-medium text-gray-700 transition hover:text-black"
+          >
+            Skills
+          </a>
+
+          <a
+            href="#"
+            className="font-medium text-gray-700 transition hover:text-black"
+          >
+            Contact
+          </a>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
