@@ -9,21 +9,12 @@ const Footer = () => {
           <h2 className="text-xl font-bold text-gray-900">
             Logo
           </h2>
-
           {/* Links */}
           <div className="flex gap-6 text-sm text-gray-600">
             <a href="#" className="hover:text-black">
              How
             </a>
-            <a href="#" className="hover:text-black">
-              About
-            </a>
-            <a href="#" className="hover:text-black">
-              Projects
-            </a>
-            <a href="#" className="hover:text-black">
-              Contact
-            </a>
+          
           </div>
         </div>
 
