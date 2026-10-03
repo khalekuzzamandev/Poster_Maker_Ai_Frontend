@@ -43,7 +43,7 @@ const Navbar = () => {
             href="#"
             className="font-medium text-gray-700 transition hover:text-black"
           >
-            Skill
+            all your skill
           </a>
 
           <a
