@@ -36,7 +36,7 @@ const Navbar = () => {
             href="#"
             className="font-medium text-gray-700 transition hover:text-black"
           >
-            Projects
+            Projects 
           </a>
 
           <a
