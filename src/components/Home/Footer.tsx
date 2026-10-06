@@ -12,7 +12,7 @@ const Footer = () => {
        
           <div className="flex gap-6 text-sm text-gray-600">
             <a href="#" className="hover:text-black">
-             How
+             How to work this
             </a>
           
           </div>
