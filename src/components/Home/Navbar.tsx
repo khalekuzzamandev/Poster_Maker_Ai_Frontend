@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-gray-900">
-          Logo
+          its logo place
         </h1>
 
         {/* Navigation */}
