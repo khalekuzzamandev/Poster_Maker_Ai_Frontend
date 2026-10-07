@@ -20,7 +20,8 @@ const Footer = () => {
 
 
         <div className="mt-6 border-t pt-6 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Logo. All rights reserved.
+          © <div className="bg-black text-white">
+            {new Date().getHours()}:{new Date().getMinutes()}:{new Date().getSeconds()}</div> Logo. All rights reserved.
         </div>
       </div>
     </footer>
