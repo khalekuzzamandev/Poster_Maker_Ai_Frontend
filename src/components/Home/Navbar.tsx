@@ -15,7 +15,7 @@ const Navbar = () => {
             href="#"
             className="font-medium text-gray-700 transition hover:text-black"
           >
-            Home
+            Home sfadf
           </a>
 
           <a
