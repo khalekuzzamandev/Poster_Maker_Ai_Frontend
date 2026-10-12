@@ -3,10 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import MiddleNav from "./MiddleNav";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
+import { RxCross2 } from "react-icons/rx";
 
 
 const Navbar = () => {
 
+  const [isOpen,setIsOpen]=useState(false);
   
 
   return (
@@ -27,7 +31,9 @@ const Navbar = () => {
 
 
         {/* midddle content */}
-        <MiddleNav/>
+        <div className="hidden lg:block">
+          <MiddleNav />
+        </div>
 
 
         {/* Desktop Auth */}
@@ -45,6 +51,16 @@ const Navbar = () => {
 
         </div>
 
+
+        <div className="block lg:hidden">
+          <button 
+          onClick={()=>setIsOpen((pre)=>!pre)} 
+          className="text-2xl">
+          {
+              isOpen ? <RxCross2 /> : <GiHamburgerMenu/>
+          }
+          </button>
+        </div>
 
       </div>
 

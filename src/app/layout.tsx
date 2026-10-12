@@ -9,7 +9,6 @@ import Footer from "@/components/Home/Footer";
 const robotoSlab=Roboto_Slab({
   variable:"--roboto-slab",
   subsets:['latin']
-
 })
 
 
