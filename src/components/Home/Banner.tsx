@@ -16,12 +16,10 @@ import {
 
 const Banner = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-sky-50/70 to-cyan-50/60">
-      {/* Background Decorations */}
-      <div className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full bg-blue-200/30 blur-3xl" />
-      <div className="pointer-events-none absolute right-0 top-10 h-80 w-80 rounded-full bg-cyan-200/30 blur-3xl" />
+    <section className="relative overflow-hidden ">
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2 lg:gap-10 lg:px-10 lg:py-24">
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5  sm:px-8  lg:grid-cols-2 lg:gap-10 ">
         {/* Left Content */}
         <div className="z-10 text-center lg:text-left">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white/80 px-4 py-2 text-xs font-bold tracking-wider text-blue-600 shadow-sm sm:text-sm">

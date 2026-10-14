@@ -6,19 +6,20 @@ import PosterCategories from '@/components/Home/PosterCategories';
 import PostersGallery from '@/components/Home/PostersGallery';
 import Pricing from '@/components/Home/Pricing';
 import Statistics from '@/components/Home/Statistics';
-import React from 'react';
 
 const page = () => {
   return (
-    <div className='min-h-screen '>
+    <div className='min-h-screen max-w-7xl mx-auto '>
      <Banner/>
-     <Statistics/>
-     <PosterCategories/>
-     <FeaturedTemplates/>
-     <HowItWorks/>
-     <PostersGallery/>
-     <Pricing/>
-     <FAQ/>
+     <div className='px-8 py-4'>
+        <Statistics />
+        <PosterCategories />
+        <FeaturedTemplates />
+        <HowItWorks />
+        <PostersGallery />
+        <Pricing />
+        <FAQ />
+     </div>
     </div>
   );
 };
