@@ -322,8 +322,17 @@ const Register = () => {
             {/* Google Sign Up */}
             <button
               type="button"
-              
-              className="flex w-full items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:border-cyan-300 hover:bg-cyan-50/50"
+              onClick={async () => {
+                const { error } = await authClient.signIn.social({
+                  provider: "google",
+                  callbackURL: "/",
+                });
+
+                if (error) {
+                  console.error("Google login error:", error.message);
+                }
+              }}
+              className="flex w-full items-center justify-center gap-3 rounded-xl border px-5 py-3.5"
             >
               <FcGoogle size={21} />
               Continue with Google
