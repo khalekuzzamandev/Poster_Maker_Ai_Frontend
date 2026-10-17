@@ -6,12 +6,14 @@ import MiddleNav from "./MiddleNav";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
+import { authClient } from "@/lib/auth-client";
 
 
 const Navbar = () => {
 
   const [isOpen,setIsOpen]=useState(false);
-  
+  const{data:session}=authClient.useSession();
+  const user=session?.user
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b shadow-sm backdrop-blur-md">
@@ -36,20 +38,22 @@ const Navbar = () => {
         </div>
 
 
-        {/* Desktop Auth */}
-        <div className="hidden shrink-0 items-center gap-3 lg:flex">
-          <Link href="/login" className="rounded-lg shadow px-4 py-2.5 text-sm font-semibold text-gray-700 transition hover:bg-gray-100">
-            Login
-          </Link>
+       {
+          user ? <p>{user.name}</p> :
+            <div className="hidden shrink-0 items-center gap-3 lg:flex">
+        <Link href="/login" className="rounded-lg shadow px-4 py-2.5 text-sm font-semibold text-gray-700 transition hover:bg-gray-100">
+          Login
+        </Link>
 
-          <Link
-            href="/register"
-            className="rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:from-blue-700 hover:to-cyan-500 hover:shadow-md"
-          >
-            Register
-          </Link>
+        <Link
+          href="/register"
+          className="rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:from-blue-700 hover:to-cyan-500 hover:shadow-md"
+        >
+          Register
+        </Link>
 
-        </div>
+      </div>
+       }
 
 
         <div className="block lg:hidden">

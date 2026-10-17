@@ -16,7 +16,7 @@ import {
 
 const Banner = () => {
   return (
-    <section className="relative overflow-hidden ">
+    <section className="relative overflow-hidden py-5">
 
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5  sm:px-8  lg:grid-cols-2 lg:gap-10 ">
