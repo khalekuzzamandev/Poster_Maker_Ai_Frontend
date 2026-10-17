@@ -54,14 +54,41 @@ const Navbar = () => {
         {
           user ?
 
-            <div>
-              <p>{user.name}</p>
+            <div className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-3 py-2 shadow-sm transition-all duration-200 hover:shadow-md">
+              {/* Profile Image */}
+              <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full bg-cyan-100">
+                {user.image ? (
+                  <Image
+                    src={user.image}
+                    alt={user.name || "Profile"}
+                    fill
+                    sizes="40px"
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center text-sm font-bold uppercase text-cyan-700">
+                    {user.name?.charAt(0) || "U"}
+                  </div>
+                )}
+              </div>
 
-              <button onClick={()=>{handleLogOut()}}>
-                <HiOutlineLogout />
+              {/* User Name */}
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-sm font-semibold text-gray-800">
+                  {user.name}
+                </p>
+              </div>
+
+              {/* Logout Button */}
+              <button
+                onClick={handleLogOut}
+                title="Logout"
+                aria-label="Logout"
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-gray-500 transition-all duration-200 hover:bg-red-50 hover:text-red-600 active:scale-95"
+              >
+                <HiOutlineLogout className="text-xl" />
               </button>
             </div>
-
 
             :
             <div className="hidden shrink-0 items-center gap-3 lg:flex">
