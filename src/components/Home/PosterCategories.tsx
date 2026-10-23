@@ -74,7 +74,7 @@ const PosterCategories = () => {
               Poster Categories
             </h2>
             <p className="mt-1 text-sm opacity-70">
-              Explore posters for every occasion
+              Explore posters for every occasion.
             </p>
           </div>
 

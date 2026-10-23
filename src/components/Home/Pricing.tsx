@@ -162,7 +162,7 @@ const Pricing = () => {
 
           {/* Footer Note */}
           <p className="mt-5 text-center text-xs leading-5 opacity-60">
-            Flexible plans for every creator. Choose the plan that works for you.
+            Flexible plans for every creator.
           </p>
         </div>
       </div>

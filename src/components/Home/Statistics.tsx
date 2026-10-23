@@ -44,7 +44,7 @@ const Statistics = () => {
           </span>
 
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Creativity in Numbers
+            Creativity in Number
           </h2>
 
           <p className="mt-3 text-sm leading-6 text-gray-500 sm:text-base">
