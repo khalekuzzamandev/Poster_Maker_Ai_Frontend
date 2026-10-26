@@ -39,7 +39,7 @@ const Register = () => {
         name: data.name,
         email: data.email,
         password: data.password,
-        image: data.imageUrl || undefined,
+        image: data.imageUrl || "https://surl.li/wkfswa",
       });
 
       if (result.error) {
